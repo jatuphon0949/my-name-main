@@ -168,21 +168,27 @@ export default function Register() {
         </div>
 
         {/* ปุ่ม Register (กรอบดำ) */}
-                    <div
-            className="p-2"
-            style={{
-                border: "3px solid #000000", // สีดำเข้ม และเส้นขอบหนาขึ้นเป็น 3px
-                borderRadius: "8px",
-            }}
-            >
-            <button
-                type="submit"
-                className="btn btn-dark w-100"
-                disabled={!accepted}
-            >
-                สมัครสมาชิก
-            </button>
-            </div>
+        <div
+  className="p-2"
+  style={{
+    border: "3px solid #dc3545", // กรอบสีแดง (Bootstrap danger)
+    borderRadius: "8px",
+  }}
+>
+  <button
+    type="submit"
+    className="btn w-100"
+    style={{
+      backgroundColor: "#dc3545", // ปุ่มสีแดง
+      color: "white",
+      border: "none",
+    }}
+    disabled={!accepted}
+  >
+    สมัครสมาชิก
+  </button>
+</div>
+
       </form>
     </div>
   );
