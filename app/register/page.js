@@ -15,14 +15,19 @@ export default function Register() {
       alert("กรุณายอมรับเงื่อนไขก่อนสมัคร");
       return;
     }
-    // ทำการส่งข้อมูล หรือประมวลผลต่อ
     alert("สมัครสมาชิกเรียบร้อย!");
   };
 
   return (
     <div
       className="d-flex justify-content-center align-items-center vh-100"
-      style={{ background: "#f8f9fa" }}
+      style={{
+        backgroundImage: 'url("/login/1.png")', // เปลี่ยนเป็น path ของภาพคุณ
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        backgroundColor: "#f8f9fa",
+      }}
     >
       <form
         onSubmit={handleSubmit}
@@ -163,21 +168,21 @@ export default function Register() {
         </div>
 
         {/* ปุ่ม Register (กรอบดำ) */}
-        <div
-          className="p-2"
-          style={{
-            border: "2px solid black",
-            borderRadius: "8px",
-          }}
-        >
-          <button
-            type="submit"
-            className="btn btn-dark w-100"
-            disabled={!accepted}
-          >
-            สมัครสมาชิก
-          </button>
-        </div>
+                    <div
+            className="p-2"
+            style={{
+                border: "3px solid #000000", // สีดำเข้ม และเส้นขอบหนาขึ้นเป็น 3px
+                borderRadius: "8px",
+            }}
+            >
+            <button
+                type="submit"
+                className="btn btn-dark w-100"
+                disabled={!accepted}
+            >
+                สมัครสมาชิก
+            </button>
+            </div>
       </form>
     </div>
   );
