@@ -53,7 +53,7 @@ export default function Navbar() {
   style={{
     border: '1px solid black',
     borderRadius: '8px',
-    boxShadow: '0 4px 10px rgba(0, 0, 0, 0.3)',
+    boxShadow: '0 4px 10px rgba(0, 0, 0, 1)',
     backgroundColor: 'white'
   }}
 >
@@ -66,7 +66,7 @@ export default function Navbar() {
   style={{
     border: '1px solid black',
     borderRadius: '8px',
-    boxShadow: '0 4px 10px rgba(0, 0, 0, 0.3)',
+    boxShadow: '0 4px 10px rgba(0, 0, 0, 1)',
     backgroundColor: 'white'
   }}
 >
